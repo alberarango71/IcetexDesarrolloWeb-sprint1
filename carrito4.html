@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Usuario Registrado</title>
+    <!-- Enlaces a Bootstrap y CSS personalizado -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <!-- ... (Tu barra de navegación) ... -->
+    </header>
+
+    <section class="container mt-5">
+        <!-- Campo de búsqueda de productos -->
+        <!-- ... (Campo de búsqueda) ... -->
+
+        <div id="carrito" class="mt-5">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="btn-comprar" class="btn btn-success">Comprar</button>
+        </div>
+
+        <!-- Sección de productos -->
+        <div class="row" id="productos">
+            <!-- Aquí se generarán los productos dinámicamente desde JavaScript -->
+        </div>
+    </section>
+
+    <footer class="container mt-5">
+        <p>&copy; 2023 Mi E-commerce. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlaces a Bootstrap y JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="carrito4.js"></script>
+</body>
+</html>

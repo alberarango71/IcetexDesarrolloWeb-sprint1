@@ -38,12 +38,17 @@
                 <form>
                     <div class="mb-3">
                         <label for="correo" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="correo" name="correo" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
+              
                     <div class="mb-3">
                         <label for="contrasena" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+                        <input type="password" class="form-control" id="contrasena" name="contrasena" required oninput="validarContrasena()">
+                        <div class="invalid-feedback" id="contrasenaError">La contraseña debe tener al menos 8 caracteres.</div>
                     </div>
+
+
+
                     <div class="mb-3">
                         <a href="RecuperarContrasena.html">¿Olvidaste tu contraseña?</a>
                     </div>
@@ -60,5 +65,7 @@
     <!-- Enlaces a Bootstrap y JavaScript -->
     <script src="jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
+    <script src="login.js"></script>
+
 </body>
 </html>

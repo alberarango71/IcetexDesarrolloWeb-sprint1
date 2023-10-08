@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ... (otros metadatos y enlaces CSS) ... -->
+    
+    <script>
+        // Variable para la cantidad de productos disponibles
+        let productosDisponibles = 10; // Puedes establecer la cantidad inicial
+        
+        // Función para agregar un producto al carrito y actualizar la cantidad disponible
+        function agregarAlCarrito() {
+            if (productosDisponibles > 0) {
+                // Reducir la cantidad de productos disponibles
+                productosDisponibles--;
+                
+                // Actualizar la cantidad en la página
+                document.getElementById('cantidadDisponible').textContent = productosDisponibles;
+                
+                // Aquí puedes agregar el producto al carrito
+                // ... (código para agregarlo al carrito) ...
+            } else {
+                alert('No hay más productos disponibles');
+            }
+        }
+    </script>
+</head>
+<body>
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1>Producto</h1>
+                <p>Cantidad disponible: <span id="cantidadDisponible">10</span></p>
+                <button onclick="agregarAlCarrito()" class="btn btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... (otros elementos HTML) ... -->
+</body>
+</html>

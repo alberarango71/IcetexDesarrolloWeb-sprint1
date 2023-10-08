@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        /* Estilos CSS para el carrito */
+        #carrito {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tienda de Productos</h1>
+
+    <!-- Botones para agregar productos al carrito -->
+    <div class="producto">
+        <h3>Producto 1</h3>
+        <p>Precio: $10.99</p>
+        <button onclick="agregarProducto('Producto 1', 10.99)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <h3>Producto 2</h3>
+        <p>Precio: $19.99</p>
+        <button onclick="agregarProducto('Producto 2', 19.99)">Agregar al carrito</button>
+    </div>
+
+    <!-- Carrito de compras -->
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+    </div>
+
+     <script src="./carrito2.js"></script>
+</body>
+</html>
